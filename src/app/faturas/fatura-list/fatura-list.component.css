@@ -1,0 +1,58 @@
+#conteudo-invoices {
+    padding: 50px 0px;
+}
+.bloco-invoice {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background-color: white;
+    padding-left: 30px;
+    border-radius: 5px;
+    margin: 20px 0px;
+    cursor: pointer;
+    height: 72px;
+}
+.bloco-invoice img {
+    position: relative;
+    right: 20px;
+}
+.bloco-invoice .paymentDue {
+    width: 110px;
+}
+.conteiner-status {
+    display: flex;
+    width: 104px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+.conteiner-status li {
+    font-size: 25px;
+    width: 15px;
+}
+.invoice-total {
+    width: 135px;
+    text-align: end;
+    font-size: 15px;
+}
+.clientName {
+    width: 100px;
+}
+.bloco-invoice .paymentDue {
+    width: 110px;
+}
+.id-invoice {
+    width: 70px;
+}
+.id-invoice strong {
+    color: black;
+}
+.id-invoice, .paymentDue, .clientName {
+    color: rgb(161, 161, 161);
+    font-weight: 400;
+}
+.status-invoice {
+    text-transform: capitalize;
+}
+

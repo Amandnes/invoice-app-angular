@@ -1,0 +1,87 @@
+#conteudo-top {
+    width: 730px;
+    justify-content: space-between;
+}
+#conteudo-top, .filtro, .status-filtro {
+    display: flex;
+    align-items: center;
+}
+.conteudo-top-esquerdo h2{
+    font-size: 33px;
+    margin: 0px;
+}
+.conteudo-top-esquerdo h6{
+    margin: 7px 0px 0px 0px;
+    font-weight: 400;
+}
+.conteudo-top-esquerdo h6 {
+    color: rgb(161, 161, 161);
+    font-size: 13px;
+}
+.status-filtro {
+    gap: 10px;
+    cursor: pointer;
+}
+.filtro {
+    flex-direction: column;
+}
+.filtro h5 {
+    margin: 0px;
+}
+.filtro img {
+    width: 10px;
+    height: 6px;
+}
+.nova-fatura img{
+    background: white;
+    padding: 9px;
+    border-radius: 15px;
+    height: 9px;
+}
+.nova-fatura {
+    border: 0px;
+    height: 40px;
+    width: 140px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-radius: 25px;
+    
+}
+.nova-fatura, #save-send, button#save-changes {
+    color: white;
+    background-color: #7c5dfa;
+}
+.nova-fatura:hover, #save-send:hover, button#save-changes:hover {
+    background-color: #9277ff;
+}
+.nova-fatura, .lista-filtros label, .lista-filtros input, select, .img-delete, #tema {
+    cursor: pointer;
+}
+.conteudo-top-direito {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+.lista-filtros label{
+    font-weight: bold;
+    font-size: 15px;
+}
+.lista-filtros div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 7px;
+}
+.lista-filtros {
+    width: 140px;
+    height: 70px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    position: absolute;
+    top: 130px;
+    box-shadow: 0px 10px 25px -10px lightslategray;
+    font-size: 18px;
+}
+.fil { cursor: pointer;}

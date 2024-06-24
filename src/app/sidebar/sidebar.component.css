@@ -1,0 +1,56 @@
+aside {
+    background-color: #1e2139;
+    border-radius: 0px 20px 18px 0px;
+    justify-content: space-between;
+    z-index: 3;
+    height: 100vh;
+    position: fixed;
+}
+aside, #logo {
+    width: 103px;
+}
+.sub-background {
+    background-color: #9277ff;
+    width: 103px;
+    height: 52px;
+    position: relative;
+    top: 7px;
+    border-radius: 18px 0px 18px 0px;
+}
+#logo {
+    height: 103px;
+    background-color: #795af4;
+    border-radius: 0px 18px 18px 0px;
+}
+#logo img {
+    position: relative;
+    top: 30px;
+    left: 30px;
+    height: 40px;
+    z-index: 500;
+}
+aside, #side-bot, .img-usuario {
+    display: flex;
+}
+aside, #side-bot {
+    flex-direction: column;
+}
+#side-bot {
+    gap: 20px;
+    align-items: center;
+}
+.img-usuario, .paragrafo {
+    justify-content: center;
+}
+.img-usuario {
+    border-top: 1px solid #494E6E;
+    padding: 20px 0px;
+    width: 100%;
+}
+.img-usuario img {
+    width: 40px;
+    border-radius: 20px;
+}
+.tema {
+    cursor: pointer;
+}

@@ -1,0 +1,80 @@
+<div *ngIf="isLoad">
+    <div class="go-back" routerLink="/">
+            <img src="assets/img/icon-arrow-left.svg">
+        <h5 class="cl-black">Go back</h5>
+    </div>
+    <div class="conteiner-top">
+        <div id="conteiner-status-invoice">
+        <h5 class="cl-gray">Status</h5>
+        <div class="conteiner-status2" [ngClass]="styleStatus(faturaSelecionada.status)">
+            <li></li>
+            <h4 class="status-invoice2">{{faturaSelecionada.status}}</h4>
+        </div>
+        </div>
+        <div class="conteiner-botoes">
+        <button class="botao-edit" type="button" (click)="onEdit()">Edit</button>
+        <button class="botao-delete" (click)="onDelete()">Delete</button>
+        <button class="botao-marcar-pago" type="button" (click)="markPaid()">Mark as Paid</button>
+        </div>
+    </div>
+    <div class="conteiner-info-invoice">
+        <div class="info-parte-1">
+        <div class="id-descricao-invoice">
+            <h4 class="id-invoice2 cl-gray">#<strong class="cl-black">{{faturaSelecionada.id}}</strong></h4>
+            <h5 class="descricao-invoice cl-gray">{{faturaSelecionada.description}}</h5>
+        </div>
+        <div class="endereco-remetente-invoice">
+            <h5 class="sender-street cl-gray">{{faturaSelecionada.senderAddress.street}}</h5>
+            <h5 class="sender-city cl-gray">{{faturaSelecionada.senderAddress.city}}</h5>
+            <h5 class="sender-postCode cl-gray">{{faturaSelecionada.senderAddress.postCode}}</h5>
+            <h5 class="sender-country cl-gray">{{faturaSelecionada.senderAddress.country}}</h5>
+        </div>
+        </div>
+        <div class="info-parte-2">
+        <div class="datas-invoice">
+            <div class="data-fatura">
+            <h5 class="cl-gray">Invoice Date</h5>
+            <h5 class="invoice-date cl-black">{{faturaSelecionada.createdAt | date: 'dd MMM yyyy'}}</h5>
+            </div>
+            <div class="data-pagamento">
+            <h5 class="cl-gray">Payment Due</h5>
+            <h5 class="paymentDue2 cl-black">{{faturaSelecionada.paymentDue | date: 'dd MMM yyyy'}}</h5>
+            </div>
+        </div>
+        <div class="conta-para">
+            <h5 class="cl-gray">Bill To</h5>
+            <div class="info-client">
+            <h5 class="clientName2 cl-black">{{faturaSelecionada.clientName}}</h5>
+            <h5 class="client-street cl-gray">{{faturaSelecionada.clientAddress.street}}</h5>
+            <h5 class="client-city cl-gray">{{faturaSelecionada.clientAddress.city}}</h5>
+            <h5 class="client-postCode cl-gray">{{faturaSelecionada.clientAddress.postCode}}</h5>
+            <h5 class="client-country cl-gray">{{faturaSelecionada.clientAddress.country}}</h5>
+            </div>
+        </div>
+        <div class="enviado-para">
+            <h5 class="cl-gray">Sent To</h5>
+            <h5 class="client-email cl-black">{{faturaSelecionada.clientEmail}}</h5>
+        </div>
+        </div>
+        <div class="info-parte-3">
+        <div id="conteudo-items">
+            <div class="titulo-lista-item-invoice">
+                <h5 class="nome-item2 cl-gray">Item Name</h5>
+                <h5 class="quantidade-item2 cl-gray">Qty.</h5>
+                <h5 class="preco-item2 cl-gray">Price</h5>
+                <h5 class="valor-total-item2 cl-gray">Total</h5>
+            </div>
+            <div class="lista-items-invoice" *ngFor="let dados of faturaSelecionada.items">
+                <h5 class="item-name">{{dados.name}}</h5>
+                <h5 class="item-quantity">{{dados.quantity}}</h5>
+                <h5 class="item-price">£ {{dados.price ? dados.price.toFixed(2) : '0'}}</h5>
+                <h5 class="invoice-total">£ {{dados.total ? dados.total.toFixed(2) : '0'}}</h5>
+            </div>
+        </div>
+        <div id="conteiner-soma-items">
+            <h5>Amount Due</h5>
+            <h3 class="soma-items">£ {{faturaSelecionada.total ? faturaSelecionada.total.toFixed(2) : '0'}}</h3>
+        </div>
+        </div>
+    </div>
+</div>

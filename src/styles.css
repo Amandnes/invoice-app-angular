@@ -1,1 +1,32 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'League Spartan';
+    src: url('assets/fonts/LeagueSpartan-VariableFont_wght.ttf');
+}
+body {
+    margin: 0px;
+    background-color: #f8f8fb;
+    font-family: League Spartan;
+}
+#body {
+    display: flex;
+}
+#main {
+    padding: 77px 50px 77px 135px;
+    margin: 0px auto;
+    width: 730px;
+}
+app-faturas {
+    width: 100%;
+}
+.stylePd {
+    background-color: rgb(0 255 178 / 5%);
+    color: #33d69f;
+}
+.stylePg {
+    background-color: rgb(249 149 0 / 5%);
+    color: #ff8f00;
+}
+.styleDt {
+    background-color: rgb(0 0 255 / 5%);
+    color: rgb(89 112 246);
+}

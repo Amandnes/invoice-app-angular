@@ -1,0 +1,32 @@
+<div id="conteudo-top">
+<div class="conteudo-top-esquerdo">
+<h2>Invoices</h2>
+<h6 id="qtd-invoices">{{qtdInvoice}}</h6>
+</div>
+
+<div class="conteudo-top-direito">
+<div class="filtro">
+    <div class="status-filtro" (click)="statusFiltro = !statusFiltro">
+        <h5>Filter by status</h5>
+        <img src="assets/img/icon-arrow-down.svg" class="icon-arrow">
+    </div>
+    <div class="lista-filtros" *ngIf="statusFiltro">
+        <div class="fil" (click)="this.dataService.filtroStatus('draft'); status('draft')">
+            <input type="checkbox" name="draft" id="draft" [checked]="draftF">
+            <h5>Draft</h5>
+        </div> 
+        <div class="fil" (click)="this.dataService.filtroStatus('pending'); status('pending')">
+            <input type="checkbox" name="pending" id="pending" [checked]="pendingF">
+            <h5>Pending</h5>
+        </div> 
+        <div class="fil" (click)="this.dataService.filtroStatus('paid'); status('paid')">
+            <input type="checkbox" name="paid" id="paid" [checked]="paidF">
+            <h5>Paid</h5>
+        </div> 
+    </div>
+</div>
+<button class="nova-fatura"  routerLink="/new-invoice">
+    <img src="assets/img/icon-plus.svg">
+    New Invoice
+</button>
+</div>

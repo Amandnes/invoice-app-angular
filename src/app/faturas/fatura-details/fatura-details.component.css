@@ -1,0 +1,163 @@
+.go-back, #conteiner-status-invoice, .conteiner-top, .titulo-lista-item-invoice, .lista-items-invoice {
+    display: flex;
+}
+.status-invoice2 {
+    text-transform: capitalize;
+}
+
+.go-back, .conteiner-top, #conteiner-status-invoice {
+    align-items: center;
+}
+#conteiner-status-invoice, .go-back {
+    gap: 20px;
+}
+.go-back {
+    margin-bottom: 40px;
+    cursor: pointer;
+    width: 85px;
+}
+.conteiner-top {
+    height: 88px;
+    padding: 0px 30px;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+.conteiner-info-invoice, .conteiner-top {
+    background-color: white;
+    border-radius: 8px;
+}
+.conteiner-info-invoice {
+    padding: 40px;
+}
+.conteiner-botoes button {
+    padding: 0px 24px;
+}
+.botao-edit {
+    background-color: #f9fafe;
+    color: #9277ff;
+}
+.botao-edit, .botao-delete, .botao-marcar-pago {
+    height: 48px;
+    border-radius: 30px;
+    border: 0px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.botao-delete, .botao-marcar-pago {
+    color: white;
+}
+.botao-edit:hover {
+    background-color: #dfe3fa;
+}
+.botao-delete {
+    background-color: #ec5757;
+}
+.botao-delete:hover {
+    background-color: #ff9797;
+}
+.botao-marcar-pago {
+    background-color: #7c5dfa;
+}
+.botao-marcar-pago:hover {
+    background-color: #9277ff;
+}
+.conteiner-status2 {
+    display: flex;
+    width: 104px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+.conteiner-status2 li {
+    font-size: 25px;
+    width: 15px;
+}
+.conteiner-botoes button {
+    margin-left: 5px;
+}
+.cl-gray {
+    font-size: 13px;
+    color: rgb(161, 161, 161);
+    font-weight: 500;
+}
+.cl-black {
+    font-size: 15px;
+    color: black;
+}
+.go-back h5:hover {
+    color: rgb(161, 161, 161);
+}
+.go-back h5 {
+    margin: 0px;
+}
+.endereco-remetente-invoice {
+    text-align: end;
+}
+.endereco-remetente-invoice h5, .info-client h5 {
+    margin: 0px 0px 10px 0px;
+}
+.info-parte-1 {
+    display: flex;
+    justify-content: space-between;
+}
+.info-parte-2 {
+    display: flex;
+    gap: 100px;
+    margin-bottom: 40px;
+}
+.id-invoice2 {
+    margin: 0px 0px 15px 0px;
+}
+.descricao-invoice {
+    margin: 0px;
+}
+.data-fatura, .titulo-lista-item-invoice {
+    margin-bottom: 35px;
+}
+.datas-invoice {
+    width: 100px;
+}
+.conta-para {
+    width: 120px;
+}
+.nome-item2, .item-name {
+    width: 280px;
+}
+.quantidade-item2, .item-quantity {
+    width: 40px;
+    text-align: center;
+}
+.preco-item2, .valor-total-item2, .item-price, .invoice-total {
+    width: 135px;
+    text-align: end;
+}
+.titulo-lista-item-invoice h5, .lista-items-invoice h5, #conteiner-soma-items h5, h3 {
+    margin: 0px;
+}
+.lista-items-invoice h5 {
+    font-size: 15px;
+    font-weight: bold;
+}
+.lista-items-invoice {
+    margin-top: 30px;
+}
+#conteudo-items, #conteiner-soma-items {
+    padding: 30px;
+}
+#conteudo-items {
+    background-color: rgb(0 28 253 / 5%);
+    border-radius: 10px 10px 0px 0px;
+}
+#conteiner-soma-items {
+    background-color: #373b53;
+    color: white;
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.soma-items {
+    font-size: 24px;
+    font-weight: bold;
+}

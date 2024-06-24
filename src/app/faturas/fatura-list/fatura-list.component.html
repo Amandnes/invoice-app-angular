@@ -1,0 +1,14 @@
+<app-header></app-header>
+<div id="conteudo-invoices">
+    <div *ngFor="let dados of filtroDados(); let i = index" [routerLink]="dados.id">
+        <div class="bloco-invoice">
+            <h4 class="id-invoice">#<strong>{{dados.id}}</strong></h4>
+            <h5 class="paymentDue">Due {{dados.paymentDue | date: 'dd MMM yyyy'}}</h5>
+            <h5 class="clientName">{{dados.clientName}}</h5>
+            <h4 class="invoice-total">£ {{dados.total ? dados.total.toFixed(2) : '0'}}</h4>
+            <div class="conteiner-status" [ngClass]="styleStatus(dados.status)">
+                <li></li><h4 class="status-invoice">{{dados.status}}</h4>
+            </div><img src="assets/img/icon-arrow-right.svg">
+        </div>
+    </div>
+</div>
